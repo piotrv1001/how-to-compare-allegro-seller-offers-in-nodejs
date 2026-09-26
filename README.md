@@ -2,6 +2,8 @@
 
 This example calls our [Allegro Price Comparison Scraper](https://apify.com/piotrv1001/allegro-price-comparison-scraper) on Apify. It does not implement an Allegro scraper from scratch.
 
+![Allegro seller offers compared by buy-now price, delivery, and delivered total](./images/allegro_price_comparison_blog.png)
+
 ## What this example does
 
 - Sends one Allegro Poland offer URL to the Actor
@@ -74,6 +76,10 @@ items.forEach((item) => {
 ## Example output
 
 [`sample-output.json`](./sample-output.json) contains two full records from our September 18, 2026 printer validation. That validation used buy-now sorting; the code above requests delivered-price sorting, so your order and prices may differ. Useful fields include `productId`, `offerId`, `sellerLogin`, `buyNowPrice`, `deliveryCost`, `priceWithDelivery`, `condition`, and `smart`.
+
+![Allegro seller-offer dataset with eight visible price-comparison rows](./images/allegro_price_comparison_results.png)
+
+The screenshot shows eight visible rows from a larger printer comparison. The code above saves up to three offers, so its dataset will be shorter. Prices are historical snapshots; check current offers before making a decision.
 
 ## Use cases
 
