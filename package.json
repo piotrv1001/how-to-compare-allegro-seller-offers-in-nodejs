@@ -1,0 +1,13 @@
+{
+  "name": "how-to-compare-allegro-seller-offers-in-nodejs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "apify-client": "^2.15.0",
+    "dotenv": "^16.6.1"
+  }
+}
